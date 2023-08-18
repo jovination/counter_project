@@ -1,0 +1,94 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #141414;
+    margin: 0;
+}
+.container{
+    width: 480px;
+    height: 450px;
+    border-radius: 38px;
+    background: #191919;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 4px 7px 0px rgba(0, 0, 0, 0.7);
+    position: relative;
+    
+}
+#countLabel{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    background: #222;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.counter-section{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#decreaseBtn, #increaseBtn{
+    border: none;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #1E1E1E;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#decreaseBtn:hover, #increaseBtn:hover{
+    background: #2c2c2c;
+}
+.minus-icon, .plus-icon{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    transition: color 0.3s;
+}
+.minus-icon:hover, .plus-icon:hover{
+    color: black;
+}
+#resetBtn{
+    border: none;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: #FA6B03;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.32));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 28em;
+    right: 1.4em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#resetBtn:hover{
+    background: #242424;
+}
